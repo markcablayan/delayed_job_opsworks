@@ -5,6 +5,8 @@ This wrapper provides support custom /etc/hosts entries
 - [Delayed Job](#Delayed-Job)
 - [Host Entries](#Host-Entries)
 
+**IMPORTANT: Changes to these files will NOT take effect within opsworks until the cache has been cleared. To refresh the cache, go to Opsworks > Stacks > Deployments and hit "Run Command". From the command dropdown, select "Update Custom Cookbooks". Then run it with "Update Dependencies".**
+
 ## Delayed Job
 
 These recipes set up an [AWS OpsWorks](http://aws.amazon.com/opsworks/) instance to run [delayed_job](https://github.com/collectiveidea/delayed_job) workers for a Rails application.
